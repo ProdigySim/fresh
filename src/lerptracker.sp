@@ -9,7 +9,7 @@ public Plugin:myinfo =
 	name = "LerpTracker",
 	author = "ProdigySim",
 	description = "Keep track of players' lerp settings",
-	version = "0.4",
+	version = "0.6",
 	url = "https://bitbucket.org/ProdigySim/misc-sourcemod-plugins"
 };
 
@@ -65,7 +65,7 @@ public OnClientDisconnect_Post(client)
 /* Lerp calculation adapted from hl2sdk's CGameServerClients::OnClientSettingsChanged */
 public OnClientSettingsChanged(client)
 {
-	if(!IsFakeClient(client))
+	if(IsValidEntity(client) &&  !IsFakeClient(client))
 	{
 		ProcessPlayerLerp(client);
 	}
@@ -73,13 +73,12 @@ public OnClientSettingsChanged(client)
 
 public Action:Lerps_Cmd(client, args)
 {
-	new maxclients = GetMaxClients();
 	new lerpcnt;
-	for(new rclient=1; client < maxclients; rclient++)
+	for(new rclient=1; client <= MaxClients; rclient++)
 	{
 		if(IsClientInGame(rclient) && !IsFakeClient(rclient))
 		{
-			ReplyToCommand(client, "%02d. %N Lerp: %.02f", ++lerpcnt, rclient, (GetCurrentLerp(rclient)*1000));
+			ReplyToCommand(client, "%02d. %N Lerp: %.01f", ++lerpcnt, rclient, (GetCurrentLerp(rclient)*1000));
 		}
 	}
 	return Plugin_Handled;
@@ -87,8 +86,7 @@ public Action:Lerps_Cmd(client, args)
 
 ScanAllPlayersLerp()
 {
-	new maxclients = GetMaxClients();
-	for(new client=1; client < maxclients; client++)
+	for(new client=1; client <= MaxClients; client++)
 	{
 		InvalidateCurrentLerp(client);
 		if(IsClientInGame(client) && !IsFakeClient(client))
@@ -114,11 +112,11 @@ ProcessPlayerLerp(client)
 		{
 			if(ShouldAnnounceLerp())
 			{
-				PrintToChatAll("%N's LerpTime Changed from %.02f to %.02f", client, GetCurrentLerp(client)*1000, m_fLerpTime*1000);
+				PrintToChatAll("%N's LerpTime Changed from %.01f to %.01f", client, GetCurrentLerp(client)*1000, m_fLerpTime*1000);
 			}
 			if(ShouldLogLerp())
 			{
-				LogMessage("%N's LerpTime Changed from %.02f to %.02f", client, GetCurrentLerp(client)*1000, m_fLerpTime*1000);
+				LogMessage("%N's LerpTime Changed from %.01f to %.01f", client, GetCurrentLerp(client)*1000, m_fLerpTime*1000);
 			}
 		}
 	}
@@ -126,11 +124,11 @@ ProcessPlayerLerp(client)
 	{
 		if(ShouldAnnounceLerp())
 		{
-			PrintToChatAll("%N's LerpTime set to %.02f", client, m_fLerpTime*1000);
+			PrintToChatAll("%N's LerpTime set to %.01f", client, m_fLerpTime*1000);
 		}
 		if(ShouldLogLerp())
 		{
-			LogMessage("%N's LerpTime set to %.02f", client, m_fLerpTime*1000);
+			LogMessage("%N's LerpTime set to %.01f", client, m_fLerpTime*1000);
 		}
 	}
 	SetCurrentLerp(client, m_fLerpTime);
