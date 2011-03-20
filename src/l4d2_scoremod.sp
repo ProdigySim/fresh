@@ -10,6 +10,15 @@
 #define DEBUG_SM	0
 
 
+public Plugin:myinfo =
+{
+	name = "L4D2 Scoremod",
+	author = "CanadaRox, ProdigySim",
+	description = "L4D2 Custom Scoring System (Health Bonus)",
+	version = "1.0",
+	url = "https://bitbucket.org/CanadaRox/random-sourcemod-stuff"
+};
+
 new bool:l4d2lib_available = false;
 
 new SM_iDefaultSurvivalBonus;
@@ -246,8 +255,8 @@ public Action:SM_RoundEnd_Event(Handle:event, const String:name[], bool:dontBroa
 		
 		// If the score is nonzero, trust the SurvivalBonus var.
 		SM_iFirstScore = (SM_iFirstScore ? GetConVarInt(SM_hSurvivalBonus) *iAliveCount : 0);
-		PrintToChatAll("[Confogl] Round 1 Bonus: %d", SM_iFirstScore);
-		if (GetConVarBool(SM_hCustomMaxDistance) && GetCustomMapMaxScore() > -1) PrintToChatAll("[Confogl] Custom Max Distance: %d", GetCustomMapMaxScore());
+		PrintToChatAll("[ScoreMod] Round 1 Bonus: %d", SM_iFirstScore);
+		if (GetConVarBool(SM_hCustomMaxDistance) && GetCustomMapMaxScore() > -1) PrintToChatAll("[ScoreMod] Custom Max Distance: %d", GetCustomMapMaxScore());
 	}
 	else if (SM_bIsSecondRoundStarted && !SM_bIsSecondRoundOver)
 	{
@@ -258,9 +267,9 @@ public Action:SM_RoundEnd_Event(Handle:event, const String:name[], bool:dontBroa
 		new iScore = RoundToFloor(SM_CalculateAvgHealth(iAliveCount) * SM_fMapMulti * SM_fHBRatio + 400 * SM_fMapMulti * SM_fSurvivalBonusRatio);
 		// If the score is nonzero, trust the SurvivalBonus var.
 		iScore = iScore ? GetConVarInt(SM_hSurvivalBonus) * iAliveCount : 0; 
-		PrintToChatAll("[Confogl] Round 1 Bonus: %d", SM_iFirstScore);
-		PrintToChatAll("[Confogl] Round 2 Bonus: %d", iScore);
-		if (GetConVarBool(SM_hCustomMaxDistance) && GetCustomMapMaxScore() > -1) PrintToChatAll("[Confogl] Custom Max Distance: %d", GetCustomMapMaxScore());
+		PrintToChatAll("[ScoreMod] Round 1 Bonus: %d", SM_iFirstScore);
+		PrintToChatAll("[ScoreMod] Round 2 Bonus: %d", iScore);
+		if (GetConVarBool(SM_hCustomMaxDistance) && GetCustomMapMaxScore() > -1) PrintToChatAll("[ScoreMod] Custom Max Distance: %d", GetCustomMapMaxScore());
 	}
 }
 public Action:SM_RoundStart_Event(Handle:event, const String:name[], bool:dontBroadcast)
@@ -289,10 +298,10 @@ public Action:SM_Cmd_Health(client, args)
 	decl iAliveCount;
 	new Float:fAvgHealth = SM_CalculateAvgHealth(iAliveCount);
 	
-	if (SM_bIsSecondRoundStarted) PrintToChat(client, "[Confogl] Round 1 Bonus: %d", SM_iFirstScore);
+	if (SM_bIsSecondRoundStarted) PrintToChat(client, "[ScoreMod] Round 1 Bonus: %d", SM_iFirstScore);
 	
-	if (client)	PrintToChat(client, "[Confogl] Average Health: %.02f", fAvgHealth);
-	else PrintToServer("[Confogl] Average Health: %.02f", fAvgHealth);
+	if (client)	PrintToChat(client, "[ScoreMod] Average Health: %.02f", fAvgHealth);
+	else PrintToServer("[ScoreMod] Average Health: %.02f", fAvgHealth);
 	
 	new iScore = RoundToFloor(fAvgHealth * SM_fMapMulti * SM_fHBRatio) * iAliveCount ;
 	
@@ -302,16 +311,16 @@ public Action:SM_Cmd_Health(client, args)
 
 	if (client)
 	{
-		PrintToChat(client, "[Confogl] Health Bonus: %d", iScore );
-		if (SM_fSurvivalBonusRatio != 0.0) PrintToChat(client, "[Confogl] Static Survival Bonus Per Survivor: %d", RoundToFloor(400 * SM_fMapMulti * SM_fSurvivalBonusRatio));
+		PrintToChat(client, "[ScoreMod] Health Bonus: %d", iScore );
+		if (SM_fSurvivalBonusRatio != 0.0) PrintToChat(client, "[ScoreMod] Static Survival Bonus Per Survivor: %d", RoundToFloor(400 * SM_fMapMulti * SM_fSurvivalBonusRatio));
 	}
 	else
 	{
-		PrintToServer("[Confogl] Health Bonus: %d", iScore );
-		if (SM_fSurvivalBonusRatio != 0.0) PrintToServer("[Confogl] Static Survival Bonus Per Survivor: %d", RoundToFloor(400 * SM_fMapMulti * SM_fSurvivalBonusRatio));
+		PrintToServer("[ScoreMod] Health Bonus: %d", iScore );
+		if (SM_fSurvivalBonusRatio != 0.0) PrintToServer("[ScoreMod] Static Survival Bonus Per Survivor: %d", RoundToFloor(400 * SM_fMapMulti * SM_fSurvivalBonusRatio));
 	}
 
-	if (GetConVarBool(SM_hCustomMaxDistance) && GetCustomMapMaxScore() > -1) PrintToChatAll("[Confogl] Custom Max Distance: %d", GetCustomMapMaxScore());
+	if (GetConVarBool(SM_hCustomMaxDistance) && GetCustomMapMaxScore() > -1) PrintToChatAll("[ScoreMod] Custom Max Distance: %d", GetCustomMapMaxScore());
 }
 
 stock SM_CalculateSurvivalBonus()
