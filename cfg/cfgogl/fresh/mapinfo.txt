@@ -335,11 +335,11 @@
 	}
 	"c8m3_sewers"
 	{
-			"start_point" "10936.943359 4650.031250 90.761696"
-			"end_point" "12288.031250 12235.729492 78.031250"
-			"start_dist" "50.000000"
-			"start_extra_dist" "0.000000"
-			"end_dist" "75.000000"
+		"start_point" "10936.943359 4650.031250 90.761696"
+		"end_point" "12288.031250 12235.729492 78.031250"
+		"start_dist" "50.000000"
+		"start_extra_dist" "0.000000"
+		"end_dist" "75.000000"
 	}
 	"c8m4_interior"
 	{
@@ -386,5 +386,43 @@
 		"start_point"		"2018.281250 4541.835938 -31.843750"
 		"start_dist"		"20.604015"
 		"start_extra_dist"		"500.000000"
+	}
+	"c13m1_alpinecreek"
+	{
+		"start_point"		"-3010.188965 -524.764832 135.833740"
+		"start_dist"		"100.0"
+		"end_point"		"1186.943359 -1240.207520 451.251373"
+		"end_dist"		"100.0"
+		"start_extra_dist"	"200.0"
+		"ItemLimits"
+		{
+			"molotov"		"0"
+			"pipe_bomb" 	"0"
+			"vomitjar"		"0"
+		}
+	}
+	"c13m2_southpinestream"
+	{
+		"start_point"           "8688.393555 7050.339355 595.251343"
+		"start_dist"            "80.0"
+		"end_point"             "471.968750 8822.027344 -306.968750"
+		"end_dist"              "100.0"
+		"start_extra_dist"      "200.0"
+	}
+	"c13m3_memorialbridge"
+	{
+		"start_point"           "-4188.429199 -5137.710938 194.031250"
+		"start_dist"            "80.0"
+		"end_point"             "6103.336914 -6328.031250 484.031250"
+		"end_dist"              "100.0"
+		"start_extra_dist"      "200.0"
+	}
+	"c13m4_cutthroatcreek"
+	{
+		"start_point"           "-4063.805908 -9819.216797 447.031250"
+		"start_dist"            "100.0"
+		"end_point"             "-4615.508789 -8745.293945 421.031250;"
+		"end_dist"              "450.0"
+		"start_extra_dist"      "200.0"
 	}
 }
