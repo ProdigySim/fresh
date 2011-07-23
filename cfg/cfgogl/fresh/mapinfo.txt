@@ -425,4 +425,44 @@
 		"end_dist"              "450.0"
 		"start_extra_dist"      "200.0"
 	}
+	"c11m1_greenhouse"
+	{
+		"start_point"		"6753.771484 -534.288940 804.342407"
+		"start_dist"		"65.117729"
+		"start_extra_dist"		"577.638000"
+		"end_point"		"5274.120605 2715.548584 88.261955"
+		"end_dist"		"314.896759"
+	}
+	"c11m2_offices"
+	{
+		"start_point"		"5295.039062 2718.428467 88.261955"
+		"start_dist"		"60.237633"
+		"start_extra_dist"		"333.408081"
+		"end_point"		"7934.695801 6070.557617 48.318222"
+		"end_dist"		"310.929138"
+	}
+	"c11m3_garage"
+	{
+		"start_point"		"-5393.304199 -3161.442627 48.318222"
+		"start_dist"		"56.400623"
+		"start_extra_dist"		"304.760986"
+		"end_point"		"-343.016815 3583.830566 332.031250"
+		"end_dist"		"187.318344"
+	}
+	"c11m4_terminal"
+	{
+		"start_point"		"-326.099091 3588.496338 277.327820"
+		"start_dist"		"63.233967"
+		"start_extra_dist"		"206.287918"
+		"end_point"		"3276.041992 4504.324707 181.974670"
+		"end_dist"		"343.399078"
+	}
+	"c11m5_runway"
+	{
+		"start_point"		"-6726.473145 12007.691406 181.974670"
+		"start_dist"		"75.086731"
+		"start_extra_dist"		"344.831299"
+		"end_point"		"-5196.772949 9229.695312 -191.968750"
+		"end_dist"		"538.437988"
+	}
 }
