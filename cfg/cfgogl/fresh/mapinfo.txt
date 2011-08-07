@@ -360,71 +360,6 @@
 		"end_point" 		"5675.121582 8443.446289 6142.031250"
 		"end_dist"		"100.000000"
 	}
-	"l4d_vs_farm05_cornfield"
-	{
-		"start_point"		"10398.364258 -307.988251 2.031253"
-		"start_dist"		"117.745613"
-		"start_extra_dist"		"313.010864"
-	}
-	"l4d_vs_airport05_runway"
-	{
-		"start_point"		"-6723.984375 12011.976562 184.109375"
-		"start_dist"		"17.610500"
-		"start_extra_dist"		"500.000000"
-		"end_point"		"-5121.587402 9204.408203 -191.968750"
-		"end_dist"		"293.273346"
-		"ItemLimits"
-		{
-			"pain_pills"    "0"
-			"adrenaline"    "0"
-		}
-	}
-	"l4d_vs_smalltown05_houseboat"
-	{
-		"end_point"		"3827.009277 -4664.737793 -151.968750"
-		"end_dist"		"162.570267"
-		"start_point"		"2018.281250 4541.835938 -31.843750"
-		"start_dist"		"20.604015"
-		"start_extra_dist"		"500.000000"
-	}
-	"c13m1_alpinecreek"
-	{
-		"start_point"		"-3010.188965 -524.764832 135.833740"
-		"start_dist"		"100.0"
-		"end_point"		"1186.943359 -1240.207520 451.251373"
-		"end_dist"		"100.0"
-		"start_extra_dist"	"200.0"
-		"ItemLimits"
-		{
-			"molotov"		"0"
-			"pipe_bomb" 	"0"
-			"vomitjar"		"0"
-		}
-	}
-	"c13m2_southpinestream"
-	{
-		"start_point"           "8688.393555 7050.339355 595.251343"
-		"start_dist"            "80.0"
-		"end_point"             "471.968750 8822.027344 -306.968750"
-		"end_dist"              "100.0"
-		"start_extra_dist"      "200.0"
-	}
-	"c13m3_memorialbridge"
-	{
-		"start_point"           "-4188.429199 -5137.710938 194.031250"
-		"start_dist"            "80.0"
-		"end_point"             "6103.336914 -6328.031250 484.031250"
-		"end_dist"              "100.0"
-		"start_extra_dist"      "200.0"
-	}
-	"c13m4_cutthroatcreek"
-	{
-		"start_point"           "-4063.805908 -9819.216797 447.031250"
-		"start_dist"            "100.0"
-		"end_point"             "-4615.508789 -8745.293945 421.031250;"
-		"end_dist"              "450.0"
-		"start_extra_dist"      "200.0"
-	}
 	"c11m1_greenhouse"
 	{
 		"start_point"		"6753.771484 -534.288940 804.342407"
@@ -464,5 +399,43 @@
 		"start_extra_dist"		"344.831299"
 		"end_point"		"-5196.772949 9229.695312 -191.968750"
 		"end_dist"		"538.437988"
+	}
+	"c13m1_alpinecreek"
+	{
+		"start_point"		"-3010.188965 -524.764832 135.833740"
+		"start_dist"		"100.0"
+		"end_point"		"1186.943359 -1240.207520 451.251373"
+		"end_dist"		"100.0"
+		"start_extra_dist"	"200.0"
+		"ItemLimits"
+		{
+			"molotov"		"0"
+			"pipe_bomb" 	"0"
+			"vomitjar"		"0"
+		}
+	}
+	"c13m2_southpinestream"
+	{
+		"start_point"           "8688.393555 7050.339355 595.251343"
+		"start_dist"            "80.0"
+		"end_point"             "471.968750 8822.027344 -306.968750"
+		"end_dist"              "100.0"
+		"start_extra_dist"      "200.0"
+	}
+	"c13m3_memorialbridge"
+	{
+		"start_point"           "-4188.429199 -5137.710938 194.031250"
+		"start_dist"            "80.0"
+		"end_point"             "6103.336914 -6328.031250 484.031250"
+		"end_dist"              "100.0"
+		"start_extra_dist"      "200.0"
+	}
+	"c13m4_cutthroatcreek"
+	{
+		"start_point"           "-4063.805908 -9819.216797 447.031250"
+		"start_dist"            "100.0"
+		"end_point"             "-4615.508789 -8745.293945 421.031250;"
+		"end_dist"              "450.0"
+		"start_extra_dist"      "200.0"
 	}
 }
