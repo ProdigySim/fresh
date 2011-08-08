@@ -241,11 +241,11 @@
 	}
 	"c5m5_bridge"
 	{
-		"start_point"		"-11924.383789 5983.821777 591.226318"
-		"end_point"		"9550.915039 4033.979980 500.031250"
-		"start_dist"		"50.000000"
-		"start_extra_dist"		"0.000000"
-		"end_dist"		"100.000000"
+		"start_point"		"-11921.506836 5976.045410 547.226318"
+		"start_dist"		"70.112122"
+		"start_extra_dist"		"264.157257"
+		"end_point"		"3001.944092 6272.879395 494.284149"
+		"end_dist"		"130.807541"
 	}
 	"c6m1_riverbank"
 	{
@@ -408,11 +408,11 @@
 	}
 	"c13m1_alpinecreek"
 	{
-		"start_point"		"-3010.188965 -524.764832 135.833740"
-		"start_dist"		"100.0"
-		"end_point"		"1186.943359 -1240.207520 451.251373"
-		"end_dist"		"100.0"
-		"start_extra_dist"	"200.0"
+		"start_point"		"-3046.889648 -705.233765 75.031250"
+		"start_dist"		"75.765724"
+		"start_extra_dist"		"437.938110"
+		"end_point"		"1186.061401 -1247.817627 389.251373"
+		"end_dist"		"604.894531"
 		"ItemLimits"
 		{
 			"molotov"		"0"
@@ -422,26 +422,26 @@
 	}
 	"c13m2_southpinestream"
 	{
-		"start_point"           "8688.393555 7050.339355 595.251343"
-		"start_dist"            "80.0"
-		"end_point"             "471.968750 8822.027344 -306.968750"
-		"end_dist"              "100.0"
-		"start_extra_dist"      "200.0"
+		"start_point"		"8691.102539 7056.350586 533.251343"
+		"start_dist"		"80.806526"
+		"start_extra_dist"		"604.901245"
+		"end_point"		"470.932892 8823.397461 -368.968750"
+		"end_dist"		"324.996063"
 	}
 	"c13m3_memorialbridge"
 	{
-		"start_point"           "-4188.429199 -5137.710938 194.031250"
-		"start_dist"            "80.0"
-		"end_point"             "6103.336914 -6328.031250 484.031250"
-		"end_dist"              "100.0"
-		"start_extra_dist"      "200.0"
+		"start_point"		"-4194.461914 -5143.972168 132.031250"
+		"start_dist"		"77.191292"
+		"start_extra_dist"		"321.877747"
+		"end_point"		"6097.708496 -6337.365234 422.031250"
+		"end_dist"		"356.709808"
 	}
 	"c13m4_cutthroatcreek"
 	{
-		"start_point"           "-4063.805908 -9819.216797 447.031250"
-		"start_dist"            "100.0"
-		"end_point"             "-4615.508789 -8745.293945 421.031250;"
-		"end_dist"              "450.0"
-		"start_extra_dist"      "200.0"
+		"start_point"		"-3374.723633 -9166.667969 396.031250"
+		"start_dist"		"84.812645"
+		"start_extra_dist"		"349.184357"
+		"end_point"		"-1823.846191 -1815.961670 -250.417389"
+		"end_dist"		"254.989624"
 	}
 }
