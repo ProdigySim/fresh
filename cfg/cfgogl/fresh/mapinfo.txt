@@ -406,6 +406,52 @@
 		"end_point"		"-5196.772949 9229.695312 -191.968750"
 		"end_dist"		"538.437988"
 	}
+	"c12m1_hilltop"
+	{
+		"start_point"		"-7888.898926 -14891.244141 337.681976"
+		"start_dist"		"88.897858"
+		"start_extra_dist"		"753.082764"
+		"end_point"		"-6468.546387 -6767.946777 377.974670"
+		"end_dist"		"275.937225"
+		"ItemLimits"
+		{
+			"molotov"		"0"
+			"pipe_bomb" 	"0"
+			"vomitjar"		"0"
+		}
+	}
+	"c12m2_traintunnel"
+	{
+		"start_point"		"-6472.856445 -6769.449707 377.974670"
+		"start_dist"		"78.032898"
+		"start_extra_dist"		"270.500549"
+		"end_point"		"-870.702148 -10408.813477 -63.968750"
+		"end_dist"		"261.087494"
+	}
+	"c12m3_bridge"
+	{
+		"start_point"		"-870.702148 -10415.481445 -63.968750"
+		"start_dist"		"71.034355"
+		"start_extra_dist"		"264.843231"
+		"end_point"		"7754.335938 -11443.834961 440.031250"
+		"end_dist"		"264.020966"
+	}
+	"c12m4_barn"
+	{
+		"start_point"		"7755.584961 -11443.834961 440.031250"
+		"start_dist"		"85.814095"
+		"start_extra_dist"		"264.932068"
+		"end_point"		"10398.775391 -310.353424 2.031253"
+		"end_dist"		"316.505157"
+	}
+	"c12m5_cornfield"
+	{
+		"start_point"		"10399.091797 -312.162628 2.031253"
+		"start_dist"		"97.089050"
+		"start_extra_dist"		"315.198547"
+		"end_point"		"6972.038086 1354.824463 274.312256"
+		"end_dist"		"183.031281"
+	}
 	"c13m1_alpinecreek"
 	{
 		"start_point"		"-3046.889648 -705.233765 75.031250"
