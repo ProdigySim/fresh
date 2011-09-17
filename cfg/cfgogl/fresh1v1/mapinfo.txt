@@ -360,6 +360,52 @@
 		"end_point" 		"5675.121582 8443.446289 6142.031250"
 		"end_dist"		"100.000000"
 	}
+	"c10m1_caves"
+	{
+		"start_point"		"-11747.106445 -14618.416016 -197.777359"
+		"start_dist"		"86.396400"
+		"start_extra_dist"		"587.266541"
+		"end_point"		"-10784.895508 -4906.771973 318.224670"
+		"end_dist"		"403.989594"
+		"ItemLimits"
+		{
+			"molotov"		"0"
+			"pipe_bomb" 	"0"
+			"vomitjar"		"0"
+		}
+	}
+	"c10m2_drainage"
+	{
+		"start_point"		"-11079.036133 -8946.167969 -562.025330"
+		"start_dist"		"78.842514"
+		"start_extra_dist"		"399.942505"
+		"end_point"		"-8339.282227 -5592.915039 0.031253"
+		"end_dist"		"322.081451"
+	}
+	"c10m3_ranchhouse"
+	{
+		"start_point"		"-8334.761719 -5592.995117 6.031253"
+		"start_dist"		"82.983238"
+		"start_extra_dist"		"327.413300"
+		"end_point"		"-2673.776611 107.736259 316.727081"
+		"end_dist"		"327.768036"
+	}
+	"c10m4_mainstreet"
+	{
+		"start_point"		"-3155.918945 107.783440 328.031250"
+		"start_dist"		"99.209229"
+		"start_extra_dist"		"307.155029"
+		"end_point"		"1309.379883 -5479.276367 -26.821182"
+		"end_dist"		"324.451355"
+	}
+	"c10m5_houseboat"
+	{
+		"start_point"		"2019.751953 4538.839844 -34.821182"
+		"start_dist"		"76.933571"
+		"start_extra_dist"		"317.183868"
+		"end_point"		"3792.103271 -4653.910645 -151.968750"
+		"end_dist"		"758.440063"
+	}
 	"c11m1_greenhouse"
 	{
 		"start_point"		"6753.771484 -534.288940 804.342407"
