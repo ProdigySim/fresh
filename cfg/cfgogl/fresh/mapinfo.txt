@@ -247,6 +247,52 @@
 		"end_point"		"3001.944092 6272.879395 494.284149"
 		"end_dist"		"130.807541"
 	}
+	"c5m1_darkwaterfront"
+	{
+		"start_point"		"735.921692 732.535217 -481.968750"
+		"start_dist"		"57.458103"
+		"start_extra_dist"		"804.191406"
+		"end_point"		"-4351.050293 -1135.742554 -343.968750"
+		"end_dist"		"591.145630"
+		"ItemLimits"
+		{
+			"molotov"		"0"
+			"pipe_bomb"		"0"
+			"vomitjar"		"0"
+		}
+	}
+	"c5m2_darkpark"
+	{
+		"start_point"		"-4331.847656 -1132.059937 -343.968750"
+		"start_dist"		"90.058136"
+		"start_extra_dist"		"604.716553"
+		"end_point"		"-9823.082031 -8162.369141 -220.767731"
+		"end_dist"		"487.969635"
+	}
+	"c5m3_darkcemetery"
+	{
+		"start_point"		"6304.688477 8218.079102 35.232285"
+		"start_dist"		"85.487289"
+		"start_extra_dist"		"492.614685"
+		"end_point"		"7466.641113 -9682.580078 139.226273"
+		"end_dist"		"402.227936"
+	}
+	"c5m4_darkquarter"
+	{
+		"start_point"		"-3064.031494 4778.493164 103.226173"
+		"start_dist"		"75.451675"
+		"start_extra_dist"		"404.631805"
+		"end_point"		"1585.341553 -3387.864502 483.226257"
+		"end_dist"		"591.899353"
+	}
+	"c5m5_darkbridge"
+	{
+		"start_point"		"-11922.366211 5976.044922 547.226318"
+		"start_dist"		"95.325073"
+		"start_extra_dist"		"270.602844"
+		"end_point"		"3015.024414 6265.400391 494.284149"
+		"end_dist"		"149.938278"
+	}
 	"c6m1_riverbank"
 	{
 		"start_point"		"930.36016 3843.36181 94.029960"
