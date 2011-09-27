@@ -82,10 +82,6 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"		"200.000000"
 		"end_dist"		"150.000000"
-		"ItemLimits"
-		{
-			"pain_pills" 	"4"
-		}
 	}
 	"c2m4_barns"
 	{
@@ -148,6 +144,7 @@
 		"ItemLimits"
 		{
 			"pain_pills" 	"2"
+			"adrenaline"	"1"
 		}
 	}
 	"c4m1_milltown_a"
